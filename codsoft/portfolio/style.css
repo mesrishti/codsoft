@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:ital,wght@0,400;0,800;1,400&family=Itim&family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    
+}
+
+.portfolio{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute ;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav li a{
+    text-decoration: none ;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.left{
+    background: #262525;
+    width: 70%;
+    height: 100vh;
+    padding-left:3rem ;
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    background:  linear-gradient( -85deg, #3877FF, #262525 90%);
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.6rem;
+}
+
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877FF) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.content{
+    margin-left: 3rem;
+}
+
+.content .intro{
+    font-size: 1.1rem;
+    color: #fffefe;
+}
+
+.content .intro span{
+    color:#5DB9EE;
+}
+
+.content h1{
+    font-size: 3rem;
+    color: #5DB9EE;
+}
+
+.buttons button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .5rem 1.5rem ;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 120px;
+}
+
+button:nth-child(1){
+    background: #5DB9EE;
+}
+
+button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 3rem;
+}
+
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+
+button:nth-child(2):hover{
+    background: #5DB9EE;
+    color: #262525;
+}
+
+
+.nav li a:hover{
+     background: linear-gradient(#fff, #3877FF) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/*About*/
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    font-size: 1rem;
+    color: #fffefe;
+    max-width: 33rem;
+    margin: 1.1rem 0 2rem 0;
+    line-height: 1.8rem;
+    
+}
+.about-title{
+    color: #aeadad;
+    font-size: 49px;
+    text-align: center;
+
+}
+
+.left2{
+    background: #262525;
+    width: 70%;
+    height: 100vh;
+    padding-left:3rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right2{
+    background:  linear-gradient( -45deg, #3877FF, #262525 70%);
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.right2 .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    background-image: url(assets/6b290e35-baf4-4c9d-925f-76166adc46b1.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 119%;
+    left: 65%;
+    height: 200px;
+    width: 210px;
+    border-radius: 50%;
+    border: .1rem solid #fff;
+    box-shadow: 0 0 1rem #fcfcfc,
+    inset 0 0 2rem #3877FF;
+    
+}
+
+.about-container{
+    position: absolute;
+    top:155%;
+    gap: 1rem;
+    width: 100%;
+    color: #fcfcfc;
+    height: 250px;
+    margin-left: 290px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.badge{
+    width: 39px;
+    height: 39px;
+}
+
+i{
+    color:black;
+}
+
+.about-experience{
+    width: 450px;
+    height: 175px;
+    border: .1rem solid #aeadad;
+    border-radius:1%;
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-education{
+    margin-left: 170px;
+    width: 450px;
+    height: 175px;
+    background: transparent;
+    border: .1rem solid #aeadad;
+    border-radius:1%;
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-time{
+    color:#8b8a8a
+}
+
+.course{
+    color:#8b8a8a
+}
+
+/*Experience*/
+
+
+
+.Experiences{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading2{
+    margin-top: 20px;
+    font-size: 49px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-container{
+    height: 400px;
+    width: 900px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.details-container1{
+    border: .1rem solid #555555 ;
+    border-radius: 10%;   
+    height: 390px;
+    width: 430px ;
+    text-align: center;
+}
+
+.details-container2{  
+    border: .1rem solid #555555 ;
+    border-radius: 10%;
+    height: 390px;
+    width: 430px ;
+    text-align: center;
+}
+
+.experience-sub-title1, .experience-sub-title2{
+    color:#555555;
+    margin-top: 10px;
+}
+
+.article-container1{
+    margin-top: 30px;
+    column-gap: 90px;
+    row-gap: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.article-container2{
+    margin-top: 30px;
+    column-gap: 100px;
+    row-gap: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    max-height: 32px;
+    max-width: 32px; 
+}
+
+p{
+    color: #555555;
+}
+
+/*project*/
+
+.project{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 49px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.project-container{
+    width: 70%;
+    height: 400px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.container1{
+    width: 45%;
+    height: 100%;
+    border: .1rem solid #555555;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container2{
+    width: 45%;
+    height: 100%;
+    border: .1rem solid #555555;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.project-img2{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+.project-title{
+    text-align: center;
+}
+
+.git-button{
+    border: .1rem solid #555555;
+    padding: .2rem 1rem;
+    border-radius: 2px;
+    background: #fff;
+    color:#262525;
+    margin-top: 3px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.git-button:hover{
+    color:#fff;
+    background: #555555;
+}
+
+.project-details,
+.project-details2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*contact*/
+
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 49px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-details{
+    margin-top: 100px;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    border: .1rem solid #555555;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+
+.email-detail{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.email{
+    width: 40px;
+    height: 40px;
+}
+
+a{
+    color:black;
+    font-size: 1.3rem;
+}
+
+.linkedin-detail{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 40px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title2{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.linkedin{
+    width: 32px;
+    height: 32px;
+}
+
+
+footer{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    color: #555555;
+}
